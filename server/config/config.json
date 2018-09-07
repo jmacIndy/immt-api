@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "jeff",
+    "password": null,
+    "database": "immt_dev",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "jeff",
+    "password": null,
+    "database": "immt_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "jeff",
+    "password": null,
+    "database": "immt",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
