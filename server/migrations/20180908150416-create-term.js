@@ -1,15 +1,23 @@
 module.exports = {
   up: (queryInterface, Sequelize) =>
-    queryInterface.createTable('Glossaries', {
+    queryInterface.createTable('Terms', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      term: {
+      name: {
+        type: Sequelize.STRING(20),
+        allowNull: false,
+      },
+      description: {
         type: Sequelize.STRING,
         allowNull: false,
+      },
+      example: {
+        type: Sequelize.STRING,
+        allowNull: true,
       },
       createdAt: {
         allowNull: false,
@@ -20,5 +28,5 @@ module.exports = {
         type: Sequelize.DATE,
       },
     }),
-  down: (queryInterface /* , Sequelize */) => queryInterface.dropTable('Glossaries'),
+  down: (queryInterface /* , Sequelize */) => queryInterface.dropTable('Terms'),
 };

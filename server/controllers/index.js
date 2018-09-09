@@ -1,5 +1,1 @@
-const glossaries = require('./glossaries');
-
-module.exports = {
-  glossaries,
-};
+// node-immt-api/server/controllers.index.js
